@@ -1,0 +1,180 @@
+body, .row, .navbar{
+    margin:0px !important;
+    padding:0px !important;
+}
+.navbar{
+    font-size:2vw;
+    color:white;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+a,.nav-link {
+    color:white !important;
+    text-align:left;
+}
+.nav-item{
+    margin-left:1%;
+}
+body{
+    background:black;
+    color:white;
+    font-family:Montserrat, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    padding:0px;
+    margin:0px;
+}
+.wrap_hero_image{
+    width:100%;
+    height:auto;
+    padding:0px !important;
+    margin:0px !important;
+}
+.my_hero_image{
+    width:100%;
+    height:auto;
+}
+.my_intro{
+    display: block;
+    float:left;
+    margin-top: 15vw;
+}
+.my_intro>span{
+    display:block;
+}
+span.Iam{
+    font-size:4vw;
+    padding:0px !important;
+    margin:0px !important;
+}
+span.my_name{
+    font-size:3.5vw;
+}
+span.occuoation{
+    font-size:2vw;
+}
+span.about_me{
+    font-size: 3vw;
+    margin-left: 3%;
+    display: block;
+}
+div.line{
+    margin-left:3%;
+    width:22%;
+    background:white;
+    height:1px;
+}
+p{
+    display: block;
+    text-align:justify;
+    margin:3%;
+}
+
+
+.Illustrator_work{
+   
+}
+.Illustrator_work_1,.Illustrator_work_2, .Illustrator_work_3, .Illustrator_work_4, .Illustrator_work_5,.Illustrator_work_6, .Illustrator_work_7, .Illustrator_work_8{
+    height:auto;
+    width:20%;
+    display: inline-block;
+    margin:2% 1% 2% 3%;
+    background:white;
+}
+.my_illusttrator_art{
+    width:100%;
+    height:15vw;
+}
+/*for mobile view*/
+@media screen and (max-width: 767px) and (min-width: 100px){
+    div.my_intro{
+        display: block;
+        text-align: center !important;
+        float:none !important;
+        margin-top:0px !important;
+    }
+    i.fas {
+        font-size:4vw;
+    }
+    .Illustrator_work_1,.Illustrator_work_2, .Illustrator_work_3, .Illustrator_work_4, .Illustrator_work_5,.Illustrator_work_6, .Illustrator_work_7, .Illustrator_work_8{
+        height:auto;
+        width:45%;
+        display: inline-block;
+        margin:2% 1% 2% 3%;
+        background:white;
+    }
+    .my_illusttrator_art{
+        width:100%;
+        height:30vw;
+    }
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 30%;
+    height:auto;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    margin-top:5%;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
